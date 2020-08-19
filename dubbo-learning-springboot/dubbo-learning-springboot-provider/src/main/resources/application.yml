@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: dubbo-learning-springboot-provider
+# dubbo
+dubbo:
+  registry:
+    address: zookeeper://127.0.0.1:2181
+#    file: ${user.home}/dubbo-cache/${spring.application.name}/dubbo.cache
+  protocol:
+    name: dubbo
+    port: 20881
+  scan:
+    base-packages: person.rulo.dubbo.learning.springboot.provider.service
+demo.service.version: 1.0.0
+
